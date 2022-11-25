@@ -1,4 +1,4 @@
-# 基于以太坊大海筹（众筹）项目
+# 基于Polygon的大海筹（众筹）项目
 
 主要功能：
 1. 发布众筹：
@@ -11,12 +11,12 @@
 4. 查看当前捐款钱数
 
 主要技术：
-- 以太坊测试链: [Rinkeby](https://www.rinkeby.io/)
+- Polygon
 - 前端：[Bootstrap5](https://bootstrapdoc.com/)
 
 合约端开发步骤：
 1. 在remix编写Solidity合约
-2. 部署合约到Rinkeby网络，保存abi文件放在本项目的abi文件夹下
+2. 部署合约到Polygon网络，保存abi文件放在本项目的abi文件夹下
 3. 配置文件conf/base_conf.js内容
 4. 将page/index.html放在服务器后直接访问
 
