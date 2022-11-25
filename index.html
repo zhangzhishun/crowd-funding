@@ -135,10 +135,7 @@
         登陆账号地址: <span id="currentAccount"></span>
     </div>
     <div>
-        合约地址：0xcafD5ee09172307E191EF4a1646a0d34Bc942d5e
-    </div>
-    <div>
-        Rinkeby领币网站：https://faucets.chain.link/rinkeby, https://faucet.rinkeby.io
+        合约地址：0xDC448Bba542E18F54767a896B3988Ea45C39e4e7
     </div>
     <div>
         源码链接：https://github.com/zhangzhishun/crowd-funding-fe.git
@@ -147,7 +144,7 @@
         Web3客户端版本: <span id="web3ClientVersion"></span>
     </div>
     <div>
-        测试网络: Ethereum Rinkeby
+        网络: Polygon
     </div>
     <div>
         <a id="authorization" class="link">> 点击重新授权钱包</a>
@@ -168,7 +165,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                此DApp依赖测试网络Ethereum Rinkeby和MetaMask钱包，请检查是否满足条件
+                此DApp依赖网络Polygon和MetaMask钱包，请检查是否满足条件
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -231,7 +228,7 @@
             } catch (error) {
                 // 用户不授权时
                 console.error("User denied account access");
-                alert("您未授权钱包，请检查是否切换到Ethereum Rinkeby网络并点击页面最下方重新授权");
+                alert("您未授权钱包，请检查是否切换到Polygon网络并点击页面最下方重新授权");
                 return false;
             }
         } else {
@@ -296,7 +293,7 @@
                 try {
                     await initPage()
                 } catch (error) {
-                    alert("初始化页面数据失败\n可能由于钱包连接失败或未切换到Rinkeby网络");
+                    alert("初始化页面数据失败\n可能由于钱包连接失败或未切换到Polygon网络");
                 }
             }
         })
